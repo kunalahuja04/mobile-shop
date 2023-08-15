@@ -6,4 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://kunalahuja04.github.io',
+  base: '/mobile-shop'
 });
