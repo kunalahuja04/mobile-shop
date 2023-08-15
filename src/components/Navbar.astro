@@ -1,0 +1,28 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+---
+
+<header class="lg:flex justify-between px-5 py-3 bg-white mx-auto container">
+  <Astronav closeOnClick>
+    <div class="flex w-full lg:w-auto justify-between">
+      <img src="../../src/assets/majestic-removebg.png" class="h-14" alt="logo-nav" srcset="">
+      <div class="block lg:hidden">
+        <MenuIcon class="w-6 h-12 text-gray-800" />
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-5">
+        <li class="sm: my-2">
+          <a href="#">Home</a>
+        </li>
+        <li class="sm: my-2">
+          <a href="#">Pricing</a>
+        </li>
+        <li class="sm: my-2">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>

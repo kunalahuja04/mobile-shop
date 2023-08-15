@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroComponent from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar />
+  <main class="grid place-items-center max-h-full">
+    <HeroComponent
+      title="majestic mobiles"
+      description=" buy | sell | repair | accessories "
+    />
+  </main>
+
+  <style>
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+  </style>
+</Layout>
