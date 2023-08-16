@@ -1,0 +1,51 @@
+---
+import { default as Card } from "./Card.astro";
+---
+
+<section class="gallery px-4 pb-6">
+  <h1 class="text-2xl text-center text-gray-800 py-2">
+    <span class="text-blue-500 s-name">Gallery</span>
+  </h1>
+  <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-2">
+    <!-- First Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+    <!-- Second Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+    <!-- Third Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+    <!-- Third Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+    <!-- Third Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+    <!-- Third Card -->
+    <Card content="https://i.ibb.co/Z23qV02/iphone-pro.jpg" />
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, atque.
+  </div>
+</section>
+
+
+<style>
+  .s-name {
+    background: linear-gradient(
+      to right,
+      #ca7441,
+      #a57960,
+      #228cc8,
+      #4d67da,
+      #ad9922
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+</style>

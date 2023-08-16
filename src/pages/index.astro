@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import HeroComponent from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import About from "../components/About.astro";
+import Gallery from "../components/Gallery.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,7 +14,10 @@ import Navbar from "../components/Navbar.astro";
       title="majestic mobiles"
       description=" buy | sell | repair | accessories "
     />
+    <About />
+    <Gallery />
   </main>
+  <Footer />
 
   <style>
     h1 {

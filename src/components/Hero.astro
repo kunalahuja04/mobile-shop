@@ -11,13 +11,17 @@ const { title, description } = Astro.props;
   <div class="mx-auto text-center">
     <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
     <div class="flex flex-col items-center">
-      <img src="https://i.ibb.co/whR0XqG/majestic-removebg.png" class="h-[10rem]"  alt="majestic-removebg" />
+      <img
+        src="https://i.ibb.co/whR0XqG/majestic-removebg.png"
+        class="h-[10rem] flip"
+        alt="majestic-removebg"
+      />
       <h1
-        class="text-3xl font-semibold uppercase mb-4 text-gray-700 tracking-wider"
+        class="text-2xl font-semibold uppercase mb-2 text-gray-700 tracking-wider mt-[-0.4rem] title"
       >
         {title}
       </h1>
-      <p class="text-lg text-gray-600 mb-4 inline">
+      <p class="text-lg text-gray-600 mb-2 inline">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 170 170"
@@ -42,7 +46,78 @@ const { title, description } = Astro.props;
           ></path>
         </svg>
       </p>
-      <p class="text-lg text-gray-500 mb-4 capitalize">{description}</p>
+      <p class="text-lg text-gray-500 mb-2 capitalize">{description}</p>
     </div>
   </div>
 </section>
+
+<style>
+  .flip {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-name: rotating;
+  }
+
+  .title {
+    background: linear-gradient(
+      to right,
+      #ca7441,
+      #a57960,
+      #228cc8,
+      #4d67da,
+      #ad9922
+    );
+    background-size: 200% 200%;
+    -webkit-animation: Animation 1s ease infinite;
+    -moz-animation: Animation s ease infinite;
+    animation: Animation 1s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  @keyframes rotating {
+    0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(360deg);
+	}
+  }
+
+  @-webkit-keyframes Animation {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 91% 100%;
+    }
+    100% {
+      background-position: 10% 0%;
+    }
+  }
+  @-moz-keyframes Animation {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 91% 100%;
+    }
+    100% {
+      background-position: 10% 0%;
+    }
+  }
+  @keyframes Animation {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 91% 100%;
+    }
+    100% {
+      background-position: 10% 0%;
+    }
+  }
+</style>
